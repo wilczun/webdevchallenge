@@ -1,0 +1,55 @@
+@import 'colors';
+
+@mixin navigation-style{
+  text-decoration: none;
+  color:white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:hover{
+    color: color(hover-color);
+  }
+}
+@mixin article-button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 40px;
+  background-color: color(main-purple);
+  border:none;
+
+  &:hover{
+    background-color: color(light-purple);
+    transition: all 0.25s ease-in;
+  }
+}
+
+@mixin image-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin article-title {
+  font-size: 30px;
+  color: color(article-light);
+}
+@mixin article-text {
+  font-size: 18px;
+  color: color(article-ligh);
+}
+@mixin article-text-small {
+  font-size: 14px;
+  color: color(article-dark);
+}
+
+@mixin center-flex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+// FONT SET-UP
+@mixin article-title {
+  font-size: 30px;
+  color: color(article-title);
+}

@@ -1,0 +1,30 @@
+h2{
+  @include article-title;
+  padding: $padding;  
+}
+h3{
+  @include article-text;
+  padding: $padding; 
+}
+p{
+  @include article-text-small;
+  padding: 0px 15px 0px 15px;
+}
+
+.about-us{
+  height: 750px;
+}
+
+
+.about-us-image{
+  position: relative;
+  z-index:1;
+  width: 465px;
+  height: 460px;
+}
+
+.about-us-text{
+  background-color:color(bg-lightsand);
+  height: 360px;
+  margin-top: 50px;
+}

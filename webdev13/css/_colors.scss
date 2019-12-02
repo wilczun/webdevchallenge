@@ -1,0 +1,22 @@
+$padding: 15px;
+$borders: 15px;
+
+
+@function color($color-name){
+  @return map-get($colors, $color-name)
+};
+
+$colors: (
+  article-color-light: #828282,
+  article-color-dark:#555555,
+  article-color-hover:lighten(#E46E48,3%),
+  hover-color: rgba(0, 0, 0, 0.466),
+  bg-header: #00AFBF,
+  bg-lightsand: #F6F6F6,
+  main-purple: #9068BE,
+  light-purple: lighten(#9068BE, 3%),
+  // primary: #005DFF,
+  // primary-light: lighten(#005DFF, 40%),
+  // primary-dark: darken(#005DFF, 40%),
+  // accent: #FFF6BB,
+);
