@@ -7,14 +7,20 @@ $borders: 15px;
 };
 
 $colors: (
+  cta-white: #fff,
   article-color-light: #828282,
   article-color-dark:#555555,
   article-color-hover:lighten(#E46E48,3%),
   hover-color: rgba(0, 0, 0, 0.466),
-  bg-header: #00AFBF,
+  bg-header-blue: #00AFBF,
   bg-lightsand: #F6F6F6,
+  bg-blue: #02C6D8,
+  text-blue: #02C6D8,
   main-purple: #9068BE,
   light-purple: lighten(#9068BE, 3%),
+  button-color-orange: #E46E48,
+  button-color-blue: #326C73,
+
   // primary: #005DFF,
   // primary-light: lighten(#005DFF, 40%),
   // primary-dark: darken(#005DFF, 40%),

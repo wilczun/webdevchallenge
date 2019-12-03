@@ -11,13 +11,40 @@
   }
 }
 @mixin article-button{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
+  width: 168px;
   height: 40px;
   background-color: color(main-purple);
   border:none;
+  color:white;
+  font-size: 20px;
+
+  &:hover{
+    background-color: color(light-purple);
+    transition: all 0.25s ease-in;
+  }
+}
+
+@mixin article-button-orange{
+  width: 168px;
+  height: 40px;
+  background-color: color(button-color-orange);
+  border:none;
+  color:white;
+  font-size: 20px;
+
+  &:hover{
+    background-color: color(light-purple);
+    transition: all 0.25s ease-in;
+  }
+}
+
+@mixin article-button-blue{
+  width: 168px;
+  height: 40px;
+  background-color: color(button-color-blue);
+  border:none;
+  color:white;
+  font-size: 20px;
 
   &:hover{
     background-color: color(light-purple);
@@ -30,26 +57,25 @@
   height: auto;
 }
 
-@mixin article-title {
+@mixin article-titles {
   font-size: 30px;
-  color: color(article-light);
+  color: color(article-color-light);
 }
 @mixin article-text {
   font-size: 18px;
-  color: color(article-ligh);
+  color: color(article-color-light);
 }
 @mixin article-text-small {
   font-size: 14px;
-  color: color(article-dark);
+  color: color(article-color-dark);
 }
-
+@mixin cards-text {
+  font-size: 24px;
+  font-weight: bold;
+}
 @mixin center-flex {
   display:flex;
   justify-content: center;
   align-items: center;
 }
 // FONT SET-UP
-@mixin article-title {
-  font-size: 30px;
-  color: color(article-title);
-}

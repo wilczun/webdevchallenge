@@ -1,7 +1,7 @@
 .main-header{
   position: relative;
   height: 711px;
-  background-color: color(bg-header);
+  background-color: color(bg-header-blue);
 
     .navbar{
       display:flex;
@@ -23,12 +23,12 @@
       }
   
       .navbar-collapse{
-        background-color: color(bg-header);
+        background-color: color(bg-header-blue);
   
       }
       .navbar-nav{
         flex-direction: row;
-        background-color: color(bg-header);
+        background-color: color(bg-header-blue);
      
         a{
           @include navigation-style;
@@ -47,6 +47,7 @@
 
       h2{
         font-size: 36px;
+        color: #fff
       }
       h1{
         font-size: 60px;
@@ -54,6 +55,7 @@
       p{
         font-size: 18px;
         text-transform: none;
+        color: #fff;
       }
       
     .header-image{

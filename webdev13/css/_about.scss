@@ -1,20 +1,14 @@
-h2{
-  @include article-title;
-  padding: $padding;  
-}
-h3{
-  @include article-text;
-  padding: $padding; 
-}
-p{
-  @include article-text-small;
-  padding: 0px 15px 0px 15px;
-}
 
 .about-us{
-  height: 750px;
+  height: 100%;
+  
+  h3{
+    padding: $padding; 
+  }
+  p{
+    padding: 0px 15px 0px 15px;
+  }
 }
-
 
 .about-us-image{
   position: relative;

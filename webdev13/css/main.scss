@@ -7,6 +7,17 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
+h2{
+  @include article-titles;
+}
+h3{
+  @include article-text;
+}
+p{
+  @include article-text-small;
+}
 // NAVIGATION & HEADER
 @import 'main-header';
 @import 'about';
+@import 'call-to-action';
+@import 'what-we-do';

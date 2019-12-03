@@ -1,0 +1,30 @@
+.cta{
+  margin-top: 25px;
+  height: 100%;
+  h2,p{
+    padding: 0;
+  }
+  h2{
+    color: color(cta-white);
+    font-size: 26px;
+  }
+  p{
+    color: color(cta-white);
+    font-size: 16px
+  }
+
+  .cta-background{
+    background-color: color(main-purple);
+
+    .cta-input{
+      padding: 5px;
+      margin: 10px;
+    }
+
+    .cta-button{
+      @include article-button;
+      color: white;
+      background-color: color(button-color-orange);
+    }
+  }
+}
