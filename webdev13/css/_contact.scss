@@ -1,0 +1,32 @@
+.contact::before{
+  @include black-overlay;
+}
+
+.contact{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 450px;
+  height: 100%;
+  background-image: url('../img/contact-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+
+
+.contact-text{
+  flex-direction: column;
+  text-align: center;
+  p{
+    @include cards-text;
+    color: white;
+  }
+  .contact-button{
+    @include article-button;
+    background-color: color(button-color-orange);
+  }
+}

@@ -1,75 +1,93 @@
-.what-we-do{
+.what-we-do {
   height: 100%;
   margin-bottom: 100px;
   background-color: #F6F6F6;
   @include center-flex;
-  
 
-  .under-title-text{
+  .title::after{
+    @include title-underline;
+  }
+
+
+  .under-title-text {
     @include article-text;
   }
 
-  .info-cards{
-      @include center-flex;
-      h3,h4{
-        margin-top: 55px;
-        padding: $padding;
-      }
-    h3{
+  .info-card-one {
+    &::before {
+      content: url(../img/ilustration1.png);
+      @include circles;
+      background-color: color(main-purple);
+      top:-75px;
+      left:34%;
+    }
+  }
+
+  .info-card-two {
+    &::before {
+      content: url(../img/ilustration2.png);
+      @include circles;
+      background-color: color(bg-blue);
+      top:-75px;
+      left:34%;
+    }
+  }
+
+  .info-cards {
+    position: relative;
+
+    @include center-flex;
+    }
+    h3,
+    h4 {
+      margin-top: 55px;
+      padding: $padding;
+    }
+
+    h3 {
       @include cards-text;
       color: color(main-purple);
     }
-    h4{
+
+    h4 {
       @include cards-text;
-      color:color(text-blue)
+      color: color(text-blue)
     }
-    p{
+
+    p {
       @include article-text-small;
       padding: $padding;
       color: color(article-color-dark);
     }
 
-    
-    .info-card{
+
+    .info-card {
       position: relative;
-      margin-top: 100px;
+      margin-top: 125px;
       text-align: center;
       padding: $padding;
       box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5)
     }
-      
-      .circle{
-        @include center-flex;
-        width: 148px;
-        height: 148px;
-        border-radius: 50%;
-        position: absolute;
-        top:-30%;
-        left: 35%;
-        box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
-        
-        &:hover{
-          transform: scale(1.04);
-          transition: all 0.25s ease-in-out;
-        }
-      }
 
-      .circle-purple{
-       background-color: color(main-purple); 
-      }
-      .circle-blue{
-        background-color: color(bg-blue); 
-       }
-       .what-we-do-button-1{
-         @include article-button-orange;
-         position: absolute;
-         left: 35%;
-       }
-       .what-we-do-button-2{
-        @include article-button-blue;
-        position: absolute;
-        left: 35%;
-      }
+    .circle-purple {
+      background-color: color(main-purple);
     }
 
+    .circle-blue {
+      background-color: color(bg-blue);
+    }
+
+    .what-we-do-button-1 {
+      @include article-button-orange;
+      position: absolute;
+      left: 34%;
+    }
+
+    .what-we-do-button-2 {
+      @include article-button-blue;
+      position: absolute;
+      top: 100;
+      left: 30%;
+      width: 35%;
+    }
   }

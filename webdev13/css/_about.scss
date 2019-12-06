@@ -8,17 +8,17 @@
   p{
     padding: 0px 15px 0px 15px;
   }
+  .elo{
+    padding: 0;
+  }
+  img{
+    @include image-responsive;
+  }
+  .about-us-text{
+    background-color:color(bg-lightsand);
+    margin: 50px 0px 0px 0px;
+    padding: $padding;
+  }
 }
 
-.about-us-image{
-  position: relative;
-  z-index:1;
-  width: 465px;
-  height: 460px;
-}
 
-.about-us-text{
-  background-color:color(bg-lightsand);
-  height: 360px;
-  margin-top: 50px;
-}
