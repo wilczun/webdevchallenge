@@ -1,3 +1,8 @@
+
+  .title{
+    margin-bottom: 50px;
+  }
+
 .main-header{
   position: relative;
   height: 711px;
@@ -6,12 +11,16 @@
     .navbar{
       display:flex;
       justify-content: space-between;
+      z-index: 99;
+      
+
       .navbar-toggler{
         border: 1px solid rgba(255, 255, 255, 0.486);
         color: white;
         font-size: 15px;
         width: 50px;
         height: 35px;
+        margin-left: 300px;
   
         &:hover{
           transform: scale(1.05);
@@ -23,12 +32,11 @@
       }
   
       .navbar-collapse{
-        background-color: color(bg-header-blue);
+        background-color:transparent;
   
       }
       .navbar-nav{
-        flex-direction: row;
-        background-color: color(bg-header-blue);
+        background-color: transparent;
      
         a{
           @include navigation-style;
@@ -82,4 +90,15 @@
         }
       }
     }
+    .sticky {
+      position: fixed;
+      width: 100%;
+      left:0;
+      background-color: rgba(0, 0, 0, 0.541);
+      transition: all 0.5s ease-in; 
+
   }
+  .change-height{
+    margin-top: 88px;
+  }
+}

@@ -1,8 +1,11 @@
 .what-we-do {
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: $section-margin;
   background-color: #F6F6F6;
   @include center-flex;
+  h2{
+    margin-top: $section-margin;
+  }
 
   .title::after{
     @include title-underline;
@@ -18,8 +21,6 @@
       content: url(../img/ilustration1.png);
       @include circles;
       background-color: color(main-purple);
-      top:-75px;
-      left:34%;
     }
   }
 
@@ -28,8 +29,6 @@
       content: url(../img/ilustration2.png);
       @include circles;
       background-color: color(bg-blue);
-      top:-75px;
-      left:34%;
     }
   }
 
@@ -80,14 +79,16 @@
     .what-we-do-button-1 {
       @include article-button-orange;
       position: absolute;
-      left: 34%;
+      top: 100;
+      margin-left: -84px;
+      left: 50%;
     }
 
     .what-we-do-button-2 {
       @include article-button-blue;
       position: absolute;
       top: 100;
-      left: 30%;
-      width: 35%;
+      margin-left: -84px;
+      left: 50%;
     }
   }

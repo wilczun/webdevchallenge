@@ -21,6 +21,10 @@ p {
   color: #555555;
 }
 
+.title {
+  margin-bottom: 50px;
+}
+
 .main-header {
   position: relative;
   height: 711px;
@@ -34,6 +38,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 99;
 }
 
 .main-header .navbar .navbar-toggler {
@@ -42,6 +47,7 @@ p {
   font-size: 15px;
   width: 50px;
   height: 35px;
+  margin-left: 300px;
 }
 
 .main-header .navbar .navbar-toggler:hover {
@@ -54,15 +60,11 @@ p {
 }
 
 .main-header .navbar .navbar-collapse {
-  background-color: #00AFBF;
+  background-color: transparent;
 }
 
 .main-header .navbar .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #00AFBF;
+  background-color: transparent;
 }
 
 .main-header .navbar .navbar-nav a {
@@ -153,20 +155,27 @@ p {
   transition: all 0.25s ease-in;
 }
 
+.main-header .sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.541);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.main-header .change-height {
+  margin-top: 88px;
+}
+
 .about-us {
   height: 100%;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .about-us h3 {
   padding: 15px;
-}
-
-.about-us p {
-  padding: 0px 15px 0px 15px;
-}
-
-.about-us .elo {
-  padding: 0;
 }
 
 .about-us img {
@@ -180,8 +189,19 @@ p {
   padding: 15px;
 }
 
+.about-us .title::after {
+  content: '';
+  display: block;
+  width: 54px;
+  background-color: #02C6D8;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  margin-left: -27px;
+  margin: 10px 0px 10px -27px;
+}
+
 .cta {
-  margin-top: 25px;
   height: 100%;
 }
 
@@ -234,7 +254,7 @@ p {
 
 .what-we-do {
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
   background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,6 +267,10 @@ p {
           align-items: center;
 }
 
+.what-we-do h2 {
+  margin-top: 75px;
+}
+
 .what-we-do .title::after {
   content: '';
   display: block;
@@ -256,6 +280,7 @@ p {
   position: absolute;
   left: 50%;
   margin-left: -27px;
+  margin: 10px 0px 10px -27px;
 }
 
 .what-we-do .under-title-text {
@@ -282,9 +307,10 @@ p {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #9068BE;
   top: -75px;
-  left: 34%;
+  margin-left: -74px;
+  left: 50%;
+  background-color: #9068BE;
 }
 
 .what-we-do .info-card-two::before {
@@ -306,9 +332,10 @@ p {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #02C6D8;
   top: -75px;
-  left: 34%;
+  margin-left: -74px;
+  left: 50%;
+  background-color: #02C6D8;
 }
 
 .what-we-do .info-cards {
@@ -374,7 +401,9 @@ p {
   color: white;
   font-size: 20px;
   position: absolute;
-  left: 34%;
+  top: 100;
+  margin-left: -84px;
+  left: 50%;
 }
 
 .what-we-do .what-we-do-button-1:hover {
@@ -392,8 +421,8 @@ p {
   font-size: 20px;
   position: absolute;
   top: 100;
-  left: 30%;
-  width: 35%;
+  margin-left: -84px;
+  left: 50%;
 }
 
 .what-we-do .what-we-do-button-2:hover {
@@ -406,6 +435,11 @@ p {
   height: 750px;
 }
 
+.testimonials p {
+  font-size: 18px;
+  color: #828282;
+}
+
 .testimonials .title::after {
   content: '';
   display: block;
@@ -415,6 +449,7 @@ p {
   position: absolute;
   left: 50%;
   margin-left: -27px;
+  margin: 10px 0px 10px -27px;
 }
 
 .testimonials .item {
@@ -441,7 +476,7 @@ p {
   content: url(../img/testimonial-face.png);
   position: absolute;
   left: 38%;
-  top: 45%;
+  top: 55%;
 }
 
 .testimonials .testimonial-container::hover {

@@ -1,6 +1,8 @@
 .testimonials{
-  height: 750px;
-
+height: 750px;
+  p{
+    @include article-text;
+  }
   .title::after{
     @include title-underline;
   }
@@ -28,7 +30,7 @@
       content: url(../img/testimonial-face.png);
       position: absolute;
       left: 38%;
-      top:45%
+      top:55%
     }
     &::hover{
       background-color: black;

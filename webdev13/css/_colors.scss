@@ -1,6 +1,6 @@
 $padding: 15px;
 $borders: 15px;
-
+$section-margin: 75px;
 
 @function color($color-name){
   @return map-get($colors, $color-name)
@@ -15,6 +15,7 @@ $colors: (
   bg-header-blue: #00AFBF,
   bg-lightsand: #F6F6F6,
   bg-blue: #02C6D8,
+  collapse-nav: rgba(2, 198, 216, 0.61),
   bg-green: #011E22,
   text-blue: #02C6D8,
   main-purple: #9068BE,
