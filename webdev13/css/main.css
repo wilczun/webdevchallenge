@@ -25,13 +25,7 @@ p {
   margin-bottom: 50px;
 }
 
-.main-header {
-  position: relative;
-  height: 711px;
-  background-color: #00AFBF;
-}
-
-.main-header .navbar {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,9 +33,14 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 99;
+  background-color: #00AFBF;
 }
 
-.main-header .navbar .navbar-toggler {
+.navbar .navbar-brand {
+  margin-left: 10%;
+}
+
+.navbar .navbar-toggler {
   border: 1px solid rgba(255, 255, 255, 0.486);
   color: white;
   font-size: 15px;
@@ -50,7 +49,7 @@ p {
   margin-left: 300px;
 }
 
-.main-header .navbar .navbar-toggler:hover {
+.navbar .navbar-toggler:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   border: 2px solid rgba(0, 0, 0, 0.466);
@@ -59,28 +58,28 @@ p {
   transition: all 0.25s ease-in;
 }
 
-.main-header .navbar .navbar-collapse {
+.navbar .navbar-collapse {
   background-color: transparent;
 }
 
-.main-header .navbar .navbar-nav {
+.navbar .navbar-nav {
   background-color: transparent;
 }
 
-.main-header .navbar .navbar-nav a {
+.navbar .navbar-nav a {
   text-decoration: none;
   color: white;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
-.main-header .navbar .navbar-nav a:hover {
+.navbar .navbar-nav a:hover {
   color: rgba(0, 0, 0, 0.466);
 }
 
-.main-header .navbar .navbar-toggler-icon {
+.navbar .navbar-toggler-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +89,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-header {
+  position: relative;
+  height: 711px;
+  background-color: #00AFBF;
 }
 
 .main-header .header-content-container {
@@ -117,7 +122,7 @@ p {
   max-width: 100%;
   height: auto;
   position: absolute;
-  top: 0px;
+  top: 88px;
   right: 0;
   z-index: 0;
 }
@@ -155,17 +160,10 @@ p {
   transition: all 0.25s ease-in;
 }
 
-.main-header .sticky {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.541);
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
-
-.main-header .change-height {
-  margin-top: 88px;
+.menu-bg {
+  background-color: rgba(0, 0, 0, 0.705);
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 .about-us {

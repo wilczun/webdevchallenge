@@ -2,52 +2,52 @@
   .title{
     margin-bottom: 50px;
   }
+  .navbar{
+    display:flex;
+    justify-content: space-between;
+    z-index: 99;
+    background-color: color(bg-header-blue);
+    
+    .navbar-brand{
+      margin-left: 10%;
+    }
+    .navbar-toggler{
+      border: 1px solid rgba(255, 255, 255, 0.486);
+      color: white;
+      font-size: 15px;
+      width: 50px;
+      height: 35px;
+      margin-left: 300px;
 
+      &:hover{
+        transform: scale(1.05);
+        border:2px solid color(hover-color);
+        color: color(hover-color);
+        transition: all 0.25s ease-in;
+      }
+
+    }
+
+    .navbar-collapse{
+      background-color:transparent;   
+    }
+    .navbar-nav{
+      background-color: transparent;
+   
+      a{
+        @include navigation-style;
+        margin-right: 15px;
+        }
+      }
+
+    .navbar-toggler-icon{
+      @include center-flex;
+    }
+  }
 .main-header{
   position: relative;
   height: 711px;
   background-color: color(bg-header-blue);
-
-    .navbar{
-      display:flex;
-      justify-content: space-between;
-      z-index: 99;
-      
-
-      .navbar-toggler{
-        border: 1px solid rgba(255, 255, 255, 0.486);
-        color: white;
-        font-size: 15px;
-        width: 50px;
-        height: 35px;
-        margin-left: 300px;
-  
-        &:hover{
-          transform: scale(1.05);
-          border:2px solid color(hover-color);
-          color: color(hover-color);
-          transition: all 0.25s ease-in;
-        }
-  
-      }
-  
-      .navbar-collapse{
-        background-color:transparent;
-  
-      }
-      .navbar-nav{
-        background-color: transparent;
-     
-        a{
-          @include navigation-style;
-          margin-right: 20px;
-          }
-        }
-  
-      .navbar-toggler-icon{
-        @include center-flex;
-      }
-    }
     .header-content-container{
       height: 550px;
       color:white;
@@ -69,7 +69,7 @@
     .header-image{
       @include image-responsive;
       position: absolute;
-      top:0px;
+      top:88px;
       right: 0;
       z-index:0;
     }
@@ -90,15 +90,8 @@
         }
       }
     }
-    .sticky {
-      position: fixed;
-      width: 100%;
-      left:0;
-      background-color: rgba(0, 0, 0, 0.541);
-      transition: all 0.5s ease-in; 
-
-  }
-  .change-height{
-    margin-top: 88px;
-  }
+}
+.menu-bg{
+  background-color:rgba(0, 0, 0, 0.705);
+  transition: all 0.25s ease-in;
 }
