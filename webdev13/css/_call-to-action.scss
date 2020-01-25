@@ -1,38 +1,42 @@
-.cta{
+.cta {
   height: 100%;
-  h2,p{
+
+  h2,
+  p {
     padding: 0;
     margin: 0;
     padding: 0;
   }
 
-  .jumbotron{
+  .jumbotron {
     padding: 15px;
     margin: 0;
   }
-  h2{
+
+  h2 {
     color: color(cta-white);
     font-size: 26px;
   }
-  p{
+
+  p {
     color: color(cta-white);
     font-size: 16px
   }
 
-  .cta-background{
+  .cta-background {
     background-color: color(main-purple);
 
-    .cta-input{
+    .cta-input {
       padding: 5px;
       margin: 10px;
     }
 
-    .cta-button{
+    .cta-button {
       @include article-button;
       color: white;
       background-color: color(button-color-orange);
     }
   }
-  @media (max-width: 1200px) {
-  }
+
+  @media (max-width: 1200px) {}
 }

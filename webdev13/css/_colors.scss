@@ -2,15 +2,16 @@ $padding: 15px;
 $borders: 15px;
 $section-margin: 75px;
 
-@function color($color-name){
+@function color($color-name) {
   @return map-get($colors, $color-name)
-};
+}
 
-$colors: (
-  cta-white: #fff,
+;
+
+$colors: (cta-white: #fff,
   article-color-light: #828282,
   article-color-dark:#555555,
-  article-color-hover:lighten(#E46E48,3%),
+  article-color-hover:lighten(#E46E48, 3%),
   hover-color: rgba(0, 0, 0, 0.466),
   bg-header-blue: #00AFBF,
   bg-lightsand: #F6F6F6,

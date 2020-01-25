@@ -1,20 +1,24 @@
-footer{
-  min-height: 285;
+footer {
+  min-height: 20vh;
   height: 100%;
   background-color: color(bg-green);
-  .navbar-nav{
+
+  @include center-flex;
+
+  .navbar-nav {
     display: flex;
     flex-direction: row;
-    a{
-      
+
+    a {
+
       font-size: 12px;
       text-align: center;
-      width:75px;
+      width: 75px;
       height: 15px;
       line-height: 2px;
       color: white;
       margin-right: 5px;
       border-right: 1px solid white;
-      }
     }
   }
+}

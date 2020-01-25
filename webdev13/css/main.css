@@ -21,6 +21,13 @@ p {
   color: #555555;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .title {
   margin-bottom: 50px;
 }
@@ -146,8 +153,8 @@ p {
 }
 
 .main-header .header-content-container .header-text button {
-  width: 168px;
-  height: 40px;
+  min-width: 168px;
+  min-height: 40px;
   background-color: #9068BE;
   border: none;
   color: white;
@@ -161,7 +168,7 @@ p {
 }
 
 .menu-bg {
-  background-color: rgba(0, 0, 0, 0.705);
+  background-color: #24869e;
   -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
@@ -203,7 +210,8 @@ p {
   height: 100%;
 }
 
-.cta h2, .cta p {
+.cta h2,
+.cta p {
   padding: 0;
   margin: 0;
   padding: 0;
@@ -234,8 +242,8 @@ p {
 }
 
 .cta .cta-background .cta-button {
-  width: 168px;
-  height: 40px;
+  min-width: 168px;
+  min-height: 40px;
   background-color: #9068BE;
   border: none;
   color: white;
@@ -430,7 +438,7 @@ p {
 }
 
 .testimonials {
-  height: 750px;
+  min-height: 100vh;
 }
 
 .testimonials p {
@@ -524,8 +532,8 @@ p {
 }
 
 .contact-text .contact-button {
-  width: 168px;
-  height: 40px;
+  min-width: 168px;
+  min-height: 40px;
   background-color: #9068BE;
   border: none;
   color: white;
@@ -540,9 +548,18 @@ p {
 }
 
 footer {
-  min-height: 285;
+  min-height: 20vh;
   height: 100%;
   background-color: #011E22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .navbar-nav {

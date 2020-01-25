@@ -3,11 +3,12 @@
   margin-bottom: $section-margin;
   background-color: #F6F6F6;
   @include center-flex;
-  h2{
+
+  h2 {
     margin-top: $section-margin;
   }
 
-  .title::after{
+  .title::after {
     @include title-underline;
   }
 
@@ -36,59 +37,60 @@
     position: relative;
 
     @include center-flex;
-    }
-    h3,
-    h4 {
-      margin-top: 55px;
-      padding: $padding;
-    }
-
-    h3 {
-      @include cards-text;
-      color: color(main-purple);
-    }
-
-    h4 {
-      @include cards-text;
-      color: color(text-blue)
-    }
-
-    p {
-      @include article-text-small;
-      padding: $padding;
-      color: color(article-color-dark);
-    }
-
-
-    .info-card {
-      position: relative;
-      margin-top: 125px;
-      text-align: center;
-      padding: $padding;
-      box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5)
-    }
-
-    .circle-purple {
-      background-color: color(main-purple);
-    }
-
-    .circle-blue {
-      background-color: color(bg-blue);
-    }
-
-    .what-we-do-button-1 {
-      @include article-button-orange;
-      position: absolute;
-      top: 100;
-      margin-left: -84px;
-      left: 50%;
-    }
-
-    .what-we-do-button-2 {
-      @include article-button-blue;
-      position: absolute;
-      top: 100;
-      margin-left: -84px;
-      left: 50%;
-    }
   }
+
+  h3,
+  h4 {
+    margin-top: 55px;
+    padding: $padding;
+  }
+
+  h3 {
+    @include cards-text;
+    color: color(main-purple);
+  }
+
+  h4 {
+    @include cards-text;
+    color: color(text-blue)
+  }
+
+  p {
+    @include article-text-small;
+    padding: $padding;
+    color: color(article-color-dark);
+  }
+
+
+  .info-card {
+    position: relative;
+    margin-top: 125px;
+    text-align: center;
+    padding: $padding;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5)
+  }
+
+  .circle-purple {
+    background-color: color(main-purple);
+  }
+
+  .circle-blue {
+    background-color: color(bg-blue);
+  }
+
+  .what-we-do-button-1 {
+    @include article-button-orange;
+    position: absolute;
+    top: 100;
+    margin-left: -84px;
+    left: 50%;
+  }
+
+  .what-we-do-button-2 {
+    @include article-button-blue;
+    position: absolute;
+    top: 100;
+    margin-left: -84px;
+    left: 50%;
+  }
+}

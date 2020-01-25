@@ -1,23 +1,23 @@
-
-.about-us{
+.about-us {
   height: 100%;
   margin-top: $section-margin;
   margin-bottom: $section-margin;
-  h3{
-    padding: $padding; 
+
+  h3 {
+    padding: $padding;
   }
 
-  img{
+  img {
     @include image-responsive;
   }
-  .about-us-text{
-    background-color:color(bg-lightsand);
+
+  .about-us-text {
+    background-color: color(bg-lightsand);
     margin: 50px 0px 0px 0px;
     padding: $padding;
   }
-  .title::after{
-      @include title-underline;
+
+  .title::after {
+    @include title-underline;
   }
 }
-
-

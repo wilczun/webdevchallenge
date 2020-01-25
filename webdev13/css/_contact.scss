@@ -1,8 +1,8 @@
-.contact::before{
+.contact::before {
   @include black-overlay;
 }
 
-.contact{
+.contact {
   position: relative;
   margin: 0;
   padding: 0;
@@ -18,14 +18,16 @@
 
 
 
-.contact-text{
+.contact-text {
   flex-direction: column;
   text-align: center;
-  p{
+
+  p {
     @include cards-text;
     color: white;
   }
-  .contact-button{
+
+  .contact-button {
     @include article-button;
     background-color: color(button-color-orange);
   }

@@ -1,21 +1,25 @@
+@import 'colors', 'mixins';
 
-@import 'colors','mixins';
-
-body{
-  margin: 0; padding:0;
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 
 }
-h2{
+
+h2 {
   @include article-titles;
 }
-h3{
+
+h3 {
   @include article-text;
 }
-p{
+
+p {
   @include article-text-small;
 }
+
 // NAVIGATION & HEADER
 @import 'main-header';
 @import 'about';

@@ -1,72 +1,74 @@
 @import 'colors';
 
-@mixin navigation-style{
+@mixin navigation-style {
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  &:hover{
+
+  &:hover {
     color: color(hover-color);
   }
 }
-@mixin article-button{
-  width: 168px;
-  height: 40px;
+
+@mixin article-button {
+  min-width: 168px;
+  min-height: 40px;
   background-color: color(main-purple);
-  border:none;
-  color:white;
+  border: none;
+  color: white;
   font-size: 20px;
 
-  &:hover{
+  &:hover {
     background-color: color(light-purple);
     transition: all 0.25s ease-in;
   }
 }
 
-@mixin article-button-orange{
+@mixin article-button-orange {
   width: 168px;
   height: 40px;
   background-color: color(button-color-orange);
-  border:none;
-  color:white;
+  border: none;
+  color: white;
   font-size: 20px;
 
-  &:hover{
+  &:hover {
     background-color: color(light-purple);
     transition: all 0.25s ease-in;
   }
 }
 
-@mixin article-button-blue{
+@mixin article-button-blue {
   width: 168px;
   height: 40px;
   background-color: color(button-color-blue);
-  border:none;
-  color:white;
+  border: none;
+  color: white;
   font-size: 20px;
 
-  &:hover{
+  &:hover {
     background-color: color(light-purple);
     transition: all 0.25s ease-in;
   }
 }
 
 @mixin circles {
-    display: flex;
-    @include center-flex;
-    position: absolute;
-    width: 148px;
-    height: 148px;
-    padding: 2px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    top:-75px;
-    margin-left: -74px;
-    left:50%;
-  }
+  display: flex;
+  @include center-flex;
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  top: -75px;
+  margin-left: -74px;
+  left: 50%;
+}
 
-@mixin black-overlay{
+@mixin black-overlay {
   content: '';
   display: block;
   width: 100%;
@@ -76,7 +78,8 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.719);
 }
-@mixin image-responsive{
+
+@mixin image-responsive {
   max-width: 100%;
   height: auto;
 }
@@ -87,26 +90,31 @@
   font-size: 30px;
   color: color(article-color-light);
 }
+
 @mixin article-text {
   font-size: 18px;
   color: color(article-color-light);
 }
+
 @mixin article-text-small {
   font-size: 14px;
   color: color(article-color-dark);
 }
+
 @mixin cards-text {
   font-size: 24px;
   font-weight: bold;
 }
+
 @mixin center-flex {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 // FONT SET-UP
 
-@mixin title-underline{
+@mixin title-underline {
   content: '';
   display: block;
   width: 54px;
